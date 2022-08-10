@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f363e;
+}
+#time{
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    height: 100px;
+    width: 100px;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px,5px);
+}
+#time .circle svg circle:nth-child(2)
+{
+ stroke: var(--clr);
+ stroke-dasharray: 440;   
+}
+#time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#time .ap{
+    position: relative;
+    font-size: 1rem;
+    transform: translate(-20px);
+}
